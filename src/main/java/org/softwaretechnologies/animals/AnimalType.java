@@ -1,13 +1,17 @@
 package org.softwaretechnologies.animals;
 
 public enum AnimalType {
-    CAT{
+    CAT("meow"),
+    DOG("woof"),
+    COW("moo");
 
-    }, DOG{
+    private final String sound;
 
-    }, COW{
+    AnimalType(String sound) {
+        this.sound = sound;
+    }
 
-    };
-
-
+    public String getSound() {
+        return sound;
+    }
 }
